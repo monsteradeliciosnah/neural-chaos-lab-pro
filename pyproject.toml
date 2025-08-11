@@ -23,3 +23,6 @@ dependencies = [
 
 [project.scripts]
 chaoslab = "neural_chaos_lab_pro.cli:app"
+
+[project.optional-dependencies]
+test = ["coverage","fastapi","httpx","pytest"]
