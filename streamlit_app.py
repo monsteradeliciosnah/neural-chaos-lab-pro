@@ -1,7 +1,8 @@
-import streamlit as st
+from pathlib import Path
+
 import pandas as pd
 import plotly.graph_objects as go
-from pathlib import Path
+import streamlit as st
 
 st.set_page_config(page_title="Neural Chaos Lab Pro", layout="wide")
 st.title("Neural Chaos Lab Pro — Attractors & Forecasts")

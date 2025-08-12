@@ -1,9 +1,11 @@
-import typer
-import pandas as pd
 from pathlib import Path
-from .data import lorenz, rossler
-from .model import train_lstm, forecast
+
+import pandas as pd
 import torch
+import typer
+
+from .data import lorenz, rossler
+from .model import forecast, train_lstm
 
 app = typer.Typer(help="Neural Chaos Lab Pro")
 
@@ -41,6 +43,7 @@ def forecast_cmd(
     device: str = "cpu",
 ):
     import torch
+
     from .model import LSTMForecaster
 
     df = pd.read_csv(data)

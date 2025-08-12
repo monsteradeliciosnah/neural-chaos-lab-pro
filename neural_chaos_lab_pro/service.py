@@ -1,9 +1,12 @@
 from __future__ import annotations
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+
 from pathlib import Path
+
 import pandas as pd
 import torch
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+
 from .model import LSTMForecaster, forecast
 
 app = FastAPI(title="Neural Chaos Lab Pro")
