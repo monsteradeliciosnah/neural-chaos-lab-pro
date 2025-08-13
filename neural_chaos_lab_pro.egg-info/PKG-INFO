@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: neural-chaos-lab-pro
+Version: 0.1.0
+Summary: Hybrid physics/ML forecasting of chaotic systems with PyTorch and visualizations
+Author: Lord Nibbler
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: torch>=2.3.0
+Requires-Dist: fastapi>=0.112.0
+Requires-Dist: uvicorn[standard]>=0.30.0
+Requires-Dist: typer>=0.12.3
+Requires-Dist: plotly>=5.22.0
+Requires-Dist: scikit-learn>=1.5.0
+Requires-Dist: torchdiffeq>=0.2.3
+
+# Neural Chaos Lab Pro — Hybrid physics ML for chaotic systems
+
+Author: Lord Nibbler
+
+- Generators for Lorenz and Rössler systems
+- PyTorch LSTM forecaster
+- Neural ODE with torchdiffeq (optional) for physics-informed modeling
+- FastAPI service for forecast
+- Streamlit dashboard with 3D attractor visualizations (Plotly)
+- Typer CLI for generate/train/forecast
